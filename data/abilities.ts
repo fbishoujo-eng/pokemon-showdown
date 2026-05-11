@@ -2876,7 +2876,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	springlock: {
 		name: "Springlock",
-		shortDesc: "If raining/statused or would be KO'd transform into Springtrap and clear status + 100% Heal. After transformation/on switch + 1 ATK + 1 Spe if ally fainted.",
+		shortDesc: "If raining/statused or would be KO'd transform into Springtrap and clear status + 100% Heal. After transformation/if ally fainted, on switch + 1 ATK + 1 Spe.",
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
 			// Only trigger for Bunnelby-Springtrap that hasn't transformed yet
